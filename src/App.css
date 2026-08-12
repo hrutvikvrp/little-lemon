@@ -107,6 +107,31 @@ span {
   font-weight: 500;
   color: #EE9972;
 }
+.testimonials {
+  background-color: #495E57;
+  padding: 4rem 2rem;
+}
+.testimonials h2 {
+  color: white;
+  text-align: center;
+}
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.reviews article {
+  background-color: white;
+  border-radius: 16px;
+  padding: 5px;
+}
+.chicago {
+  display: flex;
+  flex-direction: column;
+}
+.chicago h1 {
+  color: #333333
+}
 @media screen and (max-width: 768px) {
   .cards {
     grid-template-columns: 1fr;
@@ -123,5 +148,8 @@ span {
   }
   nav {
     flex-direction: column;
+  }
+  .reviews {
+    grid-template-columns: 1fr;
   }
 }
