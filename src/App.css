@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Karla', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: #333333;
+}
+.hero {
+  background-color: #495E57;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+.hero-text {
+  flex: 1;
+  max-width: 50%;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.hero img {
+  width: 50%;
+  border-radius: 16px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button {
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 16px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+.specials {
+  padding: 4rem 2rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+article {
+  background-color: #EDEFEE;
+  border-radius: 16px;
+  overflow: hidden;
+}
+article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer ul {
+  list-style: none;
+}
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+  footer {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero-text, .hero img {
+    max-width: 100%;
+    width: 100%;
+  }
+  nav {
+    flex-direction: column;
   }
 }
