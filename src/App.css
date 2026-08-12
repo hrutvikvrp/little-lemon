@@ -23,6 +23,12 @@ nav ul {
 nav a {
   text-decoration: none;
   color: #333333;
+  font-size: 16px;
+  font-weight: 800;
+}
+nav a:hover {
+  color: #F4CE14;
+  text-decoration: underline;
 }
 .hero {
   background-color: #495E57;
@@ -35,6 +41,10 @@ nav a {
   flex: 1;
   max-width: 50%;
   color: white;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 .hero img {
   width: 50%;
@@ -71,6 +81,31 @@ footer {
 }
 footer ul {
   list-style: none;
+}
+h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 64px;
+  font-weight: 500;
+  color: #F4CE14;
+}
+h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 40px;
+  font-weight: 400;
+}
+h3 {
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #EE9972;
 }
 @media screen and (max-width: 768px) {
   .cards {
