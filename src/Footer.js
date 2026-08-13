@@ -3,7 +3,7 @@ function Footer() {
   return (
     <footer>
         <img src={logo} alt="logo" />
-        <nav>
+        <nav aria-label="Footer navigation">
             <h3>Doormat Navigation</h3>
             <ul>
             <li><a href="#home">Home</a></li>
