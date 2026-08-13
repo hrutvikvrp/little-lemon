@@ -8,6 +8,7 @@ import ConfirmedBooking from './ConfirmedBooking';
 function Main() {
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
     const navigate = useNavigate();
+    //Sends data to API and navigates on success
     function submitForm(formData) {
         if (submitAPI(formData)) {
             navigate("/confirmed");

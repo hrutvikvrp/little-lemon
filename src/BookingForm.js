@@ -9,6 +9,7 @@ function BookingForm(props) {
         props.submitForm({ date, time, guests, occasion });
         console.log({ date, time, guests, occasion });
     }
+    //Checks if the form is complete
     function valid() {
         return ((date !== "") && (time !== "") && ((Number(guests) > 0) && (Number(guests) < 11 ) && (occasion !== "")));
     }
